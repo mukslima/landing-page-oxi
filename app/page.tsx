@@ -15,14 +15,14 @@ function Header() {
       </div>
 
       <nav className="hidden md:flex gap-6 text-white text-sm">
-        <a href="#features" className="hover:text-[#FF746C]">
-          Recursos
+        <a href="#oqoxi" className="hover:text-[#FF746C]">
+          O que é a OXI?
         </a>
-        <a href="#app" className="hover:text-[#FF746C]">
-          App
+        <a href="#beneficios" className="hover:text-[#FF746C]">
+          Benefícios
         </a>
-        <a href="#contato" className="hover:text-[#FF746C]">
-          Contato
+        <a href="#cadastro" className="hover:text-[#FF746C]">
+          Cadastro
         </a>
       </nav>
     </header>
@@ -144,116 +144,106 @@ export default function Page() {
         </section>
 
         {/* SOBRE */}
-        <section ref={addToRefs} id="features" className="py-28 px-6 text-center">
+        <section ref={addToRefs} id="oqoxi" className="py-28 px-6 text-center">
           <h2 className="text-4xl font-bold mb-6">O que é a OXI?</h2>
           <p className="max-w-3xl mx-auto text-gray-300 text-lg">
-            A OXI é uma plataforma de transporte e mobilidade que traz leveza,
-            velocidade e praticidade para o seu dia a dia.
+            A OXI é uma plataforma de transporte e mobilidade criada para facilitar a vida de motoristas e passageiros.
+            Um app leve, rápido e direto ao ponto — feito para oferecer viagens mais justas, confortáveis e seguras, 
+            enquanto dá aos motoristas mais autonomia, apoio e oportunidades reais.
           </p>
         </section>
 
         {/* BENEFÍCIOS */}
-        <section ref={addToRefs} className="py-24 px-8">
-  <h2 className="text-4xl text-center font-bold mb-16">Por que escolher a OXI?</h2>
+        <section id="beneficios" ref={addToRefs} className="py-24 px-8">
+          <h2 className="text-4xl text-center font-bold mb-16">Por que escolher a OXI?</h2>
 
-  <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-4">
 
-    {/* TARIFAS MAIS BAIXAS */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Tarifas mais baixas</h3>
-      <p className="text-gray-400 text-sm">
-        Viagens acessíveis para passageiros e mais ganhos para motoristas.
-      </p>
-    </div>
+            {/* TARIFAS MAIS BAIXAS */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Tarifas mais baixas</h3>
+              <p className="text-gray-400 text-sm">
+                Viagens mais baratas sem sacrificar a qualidade.
+              </p>
+            </div>
 
-    {/* TRANSPARÊNCIA TOTAL */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Transparência total</h3>
-      <p className="text-gray-400 text-sm">
-        Sem taxas escondidas. Você sabe exatamente o que está pagando ou recebendo.
-      </p>
-    </div>
+            {/* TRANSPARÊNCIA */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Transparência total</h3>
+              <p className="text-gray-400 text-sm">
+                Nada de surpresa: valores claros pra motoristas e passageiros.
+              </p>
+            </div>
 
-    {/* QUALIDADE DE VIDA */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Qualidade de vida</h3>
-      <p className="text-gray-400 text-sm">
-        Suporte em saúde mental, orientação financeira e bem-estar para nossos parceiros.
-      </p>
-    </div>
+            {/* QUALIDADE DE VIDA */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Qualidade de vida</h3>
+              <p className="text-gray-400 text-sm">
+                Apoio em saúde emocional, financeira e bem-estar.
+              </p>
+            </div>
 
-    {/* OPORTUNIDADES DE CRESCIMENTO */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Oportunidades de crescimento</h3>
-      <p className="text-gray-400 text-sm">
-        Mais do que corridas — a OXI conecta você a novas possibilidades.
-      </p>
-    </div>
+            {/* OPORTUNIDADES */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Crescimento real</h3>
+              <p className="text-gray-400 text-sm">
+                A OXI cria oportunidades além das corridas.
+              </p>
+            </div>
 
-    {/* APOIO NO VEÍCULO */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Apoio no veículo</h3>
-      <p className="text-gray-400 text-sm">
-        Manutenção, financiamento de carros novos e seminovos, proteção e seguro veicular.
-      </p>
-    </div>
+            {/* VEÍCULO */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Apoio com o veículo</h3>
+              <p className="text-gray-400 text-sm">
+                Manutenção, financiamento e suporte pra manter o carro em dia.
+              </p>
+            </div>
 
-    {/* AUXÍLIO COMBUSTÍVEL */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Auxílio combustível diário</h3>
-      <p className="text-gray-400 text-sm">
-        Apoio direto para reduzir custos e aumentar a renda dos motoristas.
-      </p>
-    </div>
+            {/* COMBUSTÍVEL */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Auxílio combustível diário</h3>
+              <p className="text-gray-400 text-sm">
+                Redução real de custos pra quem roda todos os dias.
+              </p>
+            </div>
 
-    {/* MANUTENÇÃO GARANTIDA */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Manutenção garantida</h3>
-      <p className="text-gray-400 text-sm">
-        Receba até R$ 1.000 em ajuda de manutenção a cada três meses.
-      </p>
-    </div>
+            {/* MANUTENÇÃO */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Manutenção garantida</h3>
+              <p className="text-gray-400 text-sm">
+                Ajuda de até R$ 1.000 a cada 3 meses para motoristas.
+              </p>
+            </div>
 
-        {/* SEGURANÇA EM PRIMEIRO LUGAR */}
-      <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-        <h3 className="text-xl font-semibold mb-3">Segurança em primeiro lugar</h3>
-        <p className="text-gray-400 text-sm">
-          Verificação rígida, proteção em viagens e suporte humano sempre disponível.
-        </p>
-      </div>
-    {/* SUPORTE 24/7 */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Suporte 24/7</h3>
-      <p className="text-gray-400 text-sm">
-        Equipe dedicada pronta para ajudar motoristas e passageiros a qualquer hora.
-      </p>
-    </div>
-    {/* PAGAMENTO RÁPIDO */}
-    <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
-      <h3 className="text-xl font-semibold mb-3">Pagamento no Pix</h3>
-      <p className="text-gray-400 text-sm">
-        Receba suas viagens na hora sem taxa escondida.
-      </p>
-    </div>
-  </div>
-</section>
+            {/* SEGURANÇA */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Segurança primeiro</h3>
+              <p className="text-gray-400 text-sm">
+                Tecnologia + verificação rígida + suporte humano imediato.
+              </p>
+            </div>
 
-        {/* MOCKUP APP */}
-        <section ref={addToRefs} id="app" className="py-28 px-6 text-center">
-          <h2 className="text-4xl font-bold mb-10">Veja como será</h2>
+            {/* SUPORTE */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Suporte 24/7</h3>
+              <p className="text-gray-400 text-sm">
+                Atendimento humano sempre disponível.
+              </p>
+            </div>
 
-          <div className="max-w-4xl mx-auto bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] shadow-xl">
-            <img
-              src="/mockupapp.jpg"
-              alt="Mockup do App"
-              className="w-full h-auto rounded-2xl opacity-90"
-            />
-            <p className="mt-6 text-gray-400">Mockup provisório.</p>
+            {/* PAGAMENTO */}
+            <div className="bg-[#0b0b0b] p-10 rounded-3xl shadow-lg border border-[#222] hover:-translate-y-2 transition-transform">
+              <h3 className="text-xl font-semibold mb-3">Pix instantâneo</h3>
+              <p className="text-gray-400 text-sm">
+                Receba suas corridas na hora, sem taxas escondidas.
+              </p>
+            </div>
+
           </div>
         </section>
 
         {/* CTA FINAL */}
-        <section ref={addToRefs} className="py-32 px-6 text-center bg-[#FF746C] text-black" id="contato">
+        <section id="cadastro" ref={addToRefs} className="py-32 px-6 text-center bg-[#FF746C] text-black">
           <h2 className="text-5xl font-bold mb-6">Entre na nova era da mobilidade</h2>
 
           <div className="flex gap-4 justify-center mt-6 flex-wrap">
