@@ -260,6 +260,7 @@ export default function Page() {
           </div>
         </section>
 
+
         {/* CTA FINAL */}
         <section id="cadastro" ref={addToRefs} className="py-32 px-6 text-center bg-[#FF746C] text-black">
           <h2 className="text-5xl font-bold mb-6">Entre na nova era da mobilidade</h2>
@@ -285,8 +286,84 @@ export default function Page() {
           </div>
         </section>
 
+        <div className="relative mt-8 flex flex-col gap-6 items-center">
+
+    {/* PASSAGEIROS */}
+    <div className="flex flex-col items-center gap-3">
+      <span className="text-sm uppercase tracking-wide text-gray-300">
+        App para Passageiros
+      </span>
+
+      <div className="flex gap-4">
+        <a
+          href="https://play.google.com/store/apps/details?id=br.com.oximob.passenger"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-105 transition-transform"
+        >
+          <img
+            src="/disponivel-google-play-badge.png"
+            alt="Passageiros - Google Play"
+            className="h-14 md:h-16 object-contain"
+          />
+        </a>
+
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-105 transition-transform"
+        >
+          <img
+            src="/app-store-badge.png"
+            alt="Passageiros - App Store"
+            className="h-14 md:h-16 object-contain"
+          />
+        </a>
+      </div>
+    </div>
+
+    {/* MOTORISTA */}
+    <div className="flex flex-col items-center gap-3">
+      <span className="text-sm uppercase tracking-wide text-gray-300">
+        App para Motoristas
+      </span>
+
+      <div className="flex gap-4">
+        <a
+          href="https://play.google.com/store/apps/details?id=br.com.oximob.driver"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-105 transition-transform"
+        >
+          <img
+            src="/disponivel-google-play-badge.png"
+            alt="Motorista - Google Play"
+            className="h-14 md:h-16 object-contain"
+          />
+        </a>
+
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-105 transition-transform"
+        >
+          <img
+            src="/app-store-badge.png"
+            alt="Motorista - App Store"
+            className="h-14 md:h-16 object-contain"
+          />
+        </a>
+      </div>
+    </div>
+
+  </div>
+
         <Footer openModal={setModal} />
       </main>
+
+      
 
       {/* -------- MODAIS -------- */}
 
