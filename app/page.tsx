@@ -171,31 +171,86 @@ export default function Page() {
           />
 
           <h1 className="relative text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
-            OXI Mobilidade Urbana – App para Motoristas e Passageiros
+            OXI
+            <br></br>App para Motoristas e Passageiros
           </h1>
 
           <p className="relative text-lg md:text-xl max-w-2xl text-gray-300 mb-6">
             Mobilidade urbana moderna, acessível e inteligente para quem dirige e para quem precisa se locomover com segurança.
           </p>
 
-          <div className="relative flex gap-4 mt-4 flex-wrap justify-center">
-            <a
-              ref={addBotaoRef}
-              href="https://oximobilidade.wordpress.com/pre-cadastro-motoristas/"
-              target="_blank"
-              className="inline-flex items-center justify-center bg-[#FF746C] hover:bg-[#ff5a50] transition transform px-10 py-4 rounded-full text-lg font-semibold shadow-xl"
-            >
-              Seja Motorista
-            </a>
+          <div className="relative mt-8 flex flex-col gap-6 items-center">
 
-            <a
-              ref={addBotaoRef}
-              href="https://oximobilidade.wordpress.com/pre-cadastro-passageiros/"
-              target="_blank"
-              className="inline-flex items-center justify-center bg-white text-black hover:bg-gray-200 transition transform px-10 py-4 rounded-full text-lg font-semibold shadow-xl"
-            >
-              Seja Passageiro
-            </a>
+            {/* PASSAGEIROS */}
+            <div className="flex flex-col items-center gap-3">
+              <span className="text-sm uppercase tracking-wide text-white">
+                App para Passageiros
+              </span>
+
+              <div className="flex gap-4">
+                <a
+                  href="https://play.google.com/store/apps/details?id=br.com.oximob.passenger"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/disponivel-google-play-badge.png"
+                    alt="Passageiros - Google Play"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://apps.apple.com/br/app/oxi-passageiro/id6757094237"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/app-store-badge.png"
+                    alt="Passageiros - App Store"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* MOTORISTA */}
+            <div className="flex flex-col items-center gap-3">
+              <span className="text-sm uppercase tracking-wide text-white">
+                App para Motoristas
+              </span>
+
+              <div className="flex gap-4">
+                <a
+                  href="https://play.google.com/store/apps/details?id=br.com.oximob.driver"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/disponivel-google-play-badge.png"
+                    alt="Motorista - Google Play"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://apps.apple.com/br/app/oxi-motorista/id6757093927"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/app-store-badge.png"
+                    alt="Motorista - App Store"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
           </div>
         </section>
 
@@ -239,100 +294,80 @@ export default function Page() {
         <section id="cadastro" ref={addToRefs} className="py-32 px-6 text-center bg-[#FF746C] text-black">
           <h2 className="text-5xl font-bold mb-6">Mobilidade justa para motoristas e passageiros</h2>
 
-          <div className="flex gap-4 justify-center mt-6 flex-wrap">
-            <a
-              ref={addBotaoRef}
-              href="https://oximobilidade.wordpress.com/pre-cadastro-motoristas/"
-              target="_blank"
-              className="inline-flex items-center justify-center bg-black text-white hover:bg-gray-900 transition transform px-10 py-4 rounded-full text-lg font-semibold shadow-xl"
-            >
-              Seja Motorista
-            </a>
+          <div className="relative mt-8 flex flex-col gap-6 items-center">
 
-            <a
-              ref={addBotaoRef}
-              href="https://oximobilidade.wordpress.com/pre-cadastro-passageiros/"
-              target="_blank"
-              className="inline-flex items-center justify-center bg-white text-black hover:bg-gray-100 transition transform px-10 py-4 rounded-full text-lg font-semibold shadow-xl"
-            >
-              Seja Passageiro
-            </a>
+            {/* PASSAGEIROS */}
+            <div className="flex flex-col items-center gap-3">
+              <span className="text-sm uppercase tracking-wide text-black">
+                App para Passageiros
+              </span>
+
+              <div className="flex gap-4">
+                <a
+                  href="https://play.google.com/store/apps/details?id=br.com.oximob.passenger"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/disponivel-google-play-badge.png"
+                    alt="Passageiros - Google Play"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://apps.apple.com/br/app/oxi-passageiro/id6757094237"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/app-store-badge.png"
+                    alt="Passageiros - App Store"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* MOTORISTA */}
+            <div className="flex flex-col items-center gap-3">
+              <span className="text-sm uppercase tracking-wide text-black">
+                App para Motoristas
+              </span>
+
+              <div className="flex gap-4">
+                <a
+                  href="https://play.google.com/store/apps/details?id=br.com.oximob.driver"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/disponivel-google-play-badge.png"
+                    alt="Motorista - Google Play"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://apps.apple.com/br/app/oxi-motorista/id6757093927"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-105 transition-transform"
+                >
+                  <img
+                    src="/app-store-badge.png"
+                    alt="Motorista - App Store"
+                    className="h-14 md:h-16 object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
           </div>
         </section>
-
-        <div className="relative mt-8 flex flex-col gap-6 items-center">
-
-    {/* PASSAGEIROS */}
-    <div className="flex flex-col items-center gap-3">
-      <span className="text-sm uppercase tracking-wide text-gray-300">
-        App para Passageiros
-      </span>
-
-      <div className="flex gap-4">
-        <a
-          href="https://play.google.com/store/apps/details?id=br.com.oximob.passenger"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-105 transition-transform"
-        >
-          <img
-            src="/disponivel-google-play-badge.png"
-            alt="Passageiros - Google Play"
-            className="h-14 md:h-16 object-contain"
-          />
-        </a>
-
-        <a
-          href="https://apps.apple.com/br/app/oxi-passageiro/id6757094237"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-105 transition-transform"
-        >
-          <img
-            src="/app-store-badge.png"
-            alt="Passageiros - App Store"
-            className="h-14 md:h-16 object-contain"
-          />
-        </a>
-      </div>
-    </div>
-
-    {/* MOTORISTA */}
-    <div className="flex flex-col items-center gap-3">
-      <span className="text-sm uppercase tracking-wide text-gray-300">
-        App para Motoristas
-      </span>
-
-      <div className="flex gap-4">
-        <a
-          href="https://play.google.com/store/apps/details?id=br.com.oximob.driver"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-105 transition-transform"
-        >
-          <img
-            src="/disponivel-google-play-badge.png"
-            alt="Motorista - Google Play"
-            className="h-14 md:h-16 object-contain"
-          />
-        </a>
-
-        <a
-          href="https://apps.apple.com/br/app/oxi-motorista/id6757093927"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-105 transition-transform"
-        >
-          <img
-            src="/app-store-badge.png"
-            alt="Motorista - App Store"
-            className="h-14 md:h-16 object-contain"
-          />
-        </a>
-      </div>
-    </div>
-
-  </div>
 
         <Footer openModal={setModal} />
       </main>
