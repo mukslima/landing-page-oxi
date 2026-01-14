@@ -53,6 +53,10 @@ export const metadata: Metadata = {
     follow: true,
   },
 
+  verification: {
+    google: "UUB1eSYFhlrvU3gQr_6jL2MFs-1iFbfmhvmXqOCswUg",
+  },
+
   openGraph: {
     title: "OXI – App de transporte com taxas menores",
     description:
