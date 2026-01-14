@@ -263,7 +263,7 @@ export default function Page() {
 
         {/* CTA FINAL */}
         <section id="cadastro" ref={addToRefs} className="py-32 px-6 text-center bg-[#FF746C] text-black">
-          <h2 className="text-5xl font-bold mb-6">Mobilidade justa para motoristas e passageiros.</h2>
+          <h2 className="text-5xl font-bold mb-6">Mobilidade justa para motoristas e passageiros</h2>
 
           <div className="flex gap-4 justify-center mt-6 flex-wrap">
             <a
