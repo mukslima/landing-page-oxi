@@ -152,6 +152,14 @@ export default function Page() {
 
       <main className="bg-black text-white min-h-screen w-full overflow-x-hidden font-sans pt-16">
 
+      {/* SEO TEXT (invisível) */}
+      <div className="sr-only">
+        Plataforma de mobilidade urbana no Brasil conectando motoristas parceiros e passageiros.
+        Aplicativo de transporte alternativo com tarifas justas, segurança, suporte 24 horas,
+        clube de benefícios e pagamento instantâneo via pix.
+      </div>
+
+
         {/* HERO */}
         <section
           ref={heroRef}
@@ -163,11 +171,11 @@ export default function Page() {
           />
 
           <h1 className="relative text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
-            OXI Mobilidade
+            OXI Mobilidade Urbana – App para Motoristas e Passageiros
           </h1>
 
           <p className="relative text-lg md:text-xl max-w-2xl text-gray-300 mb-6">
-            Mobilidade urbana moderna, acessível e inteligente — feita para facilitar a vida de motoristas e passageiros.
+            Mobilidade urbana moderna, acessível e inteligente para quem dirige e para quem precisa se locomover com segurança.
           </p>
 
           <div className="relative flex gap-4 mt-4 flex-wrap justify-center">
@@ -197,66 +205,32 @@ export default function Page() {
           <p className="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
             A OXI é uma plataforma de mobilidade criada para oferecer uma experiência justa,
             confortável e acessível. Um app leve e direto ao ponto, pensado para motoristas que querem
-            autonomia e oportunidades reais — e para passageiros que buscam viagens seguras, rápidas e com preço justo.
+            autonomia e oportunidades reais e para passageiros que buscam viagens seguras, rápidas e com preço justo.
           </p>
         </section>
 
         {/* BENEFÍCIOS */}
         <section id="beneficios" ref={addToRefs} className="py-24 px-8">
-          <h2 className="text-4xl text-center font-bold mb-16">Por que escolher a OXI?</h2>
+          <h2 className="text-4xl text-center font-bold mb-16">Vantagens de usar a OXI Mobilidade</h2>
 
           <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-4">
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Tarifas mais baixas</h3>
-              <p className="text-gray-400">Viagens acessíveis e preços realmente justos.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Transparência total</h3>
-              <p className="text-gray-400">Valores claros — sem taxas escondidas, nunca.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Qualidade de vida</h3>
-              <p className="text-gray-400">Suporte emocional, financeiro e bem-estar pra motoristas.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Crescimento real</h3>
-              <p className="text-gray-400">Oportunidades além das corridas.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Apoio com o veículo</h3>
-              <p className="text-gray-400">Manutenção, financiamento e suporte automotivo.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Auxílio combustível diário</h3>
-              <p className="text-gray-400">Redução real dos custos pra quem roda sempre.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Manutenção garantida</h3>
-              <p className="text-gray-400">Ajuda de até R$ 1.000 a cada 3 meses.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Segurança reforçada</h3>
-              <p className="text-gray-400">Tecnologia, verificação e suporte humano imediato.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Suporte 24/7</h3>
-              <p className="text-gray-400">Atendimento humano a qualquer hora.</p>
-            </div>
-
-            <div className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
-              <h3 className="text-xl font-semibold mb-3">Pix instantâneo</h3>
-              <p className="text-gray-400">Receba suas corridas na hora, sem burocracia.</p>
-            </div>
-
+            {[
+              ["Tarifas mais baixas", "Viagens acessíveis e preços realmente justos."],
+              ["Transparência total", "Valores claros — sem taxas escondidas."],
+              ["Qualidade de vida", "Suporte emocional, financeiro e bem-estar."],
+              ["Crescimento real", "Oportunidades além das corridas."],
+              ["Apoio com o veículo", "Manutenção e suporte automotivo."],
+              ["Auxílio combustível", "Redução real de custos."],
+              ["Manutenção garantida", "Ajuda trimestral."],
+              ["Segurança reforçada", "Tecnologia e verificação."],
+              ["Suporte 24/7", "Atendimento humano."],
+              ["Pix instantâneo", "Receba na hora."]
+            ].map(([title, desc]) => (
+              <div key={title} className="bg-[#0b0b0b] p-10 rounded-3xl border border-[#222] hover:-translate-y-2 transition-transform">
+                <h3 className="text-xl font-semibold mb-3">{title}</h3>
+                <p className="text-gray-400">{desc}</p>
+              </div>
+            ))}
           </div>
         </section>
 

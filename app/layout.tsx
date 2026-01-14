@@ -13,50 +13,82 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OXI Mobilidade | Conectando Motoristas e Passageiros",
+  title: "OXI – App de transporte com corridas mais baratas e taxas menores",
   description:
-    "A OXI é a plataforma de mobilidade que conecta motoristas e passageiros com segurança, rapidez e praticidade. Cadastro simples, economia e liberdade pra se movimentar.",
+    "Conheça a OXI, aplicativo de transporte com taxas menores para motoristas e corridas mais baratas para passageiros. Uma alternativa moderna ao Uber e 99. Disponível para Android e iOS.",
+
   keywords: [
-    "mobilidade urbana",
-    "motorista",
-    "passageiro",
-    "oxxi",
+    "app de transporte",
     "app de mobilidade",
-    "corridas",
-    "transporte",
-    "carona",
+    "app de corrida",
+    "app de transporte barato",
+    "app de corrida barata",
+    "app de transporte para motoristas",
+    "app de transporte para passageiros",
+    "aplicativo de corrida",
+    "aplicativo de transporte",
+    "mobilidade urbana",
+    "corridas baratas",
+    "alternativa ao uber",
+    "app para motoristas",
+    "taxas menores motorista",
+    "transporte urbano",
+    "passageiros",
+    "motoristas",
+    "oxi mobilidade",
+    "Oxxi",
+    "oxi",
+    "oxi app",
+    "oxi transporte",
+    "oxi corrida",
+    "oxi taxas menores",
+    "oxi passageiro",
+    "oxi motorista",
   ],
+
   authors: [{ name: "OXI Mobilidade" }],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   openGraph: {
-    title: "OXI Mobilidade",
+    title: "OXI – App de transporte com taxas menores",
     description:
-      "Conectamos motoristas e passageiros com segurança e praticidade.",
+      "Aplicativo de mobilidade urbana com corridas mais baratas para passageiros e mais ganhos para motoristas.",
     url: "https://landing-page-oxi.vercel.app/",
     siteName: "OXI Mobilidade",
     images: [
       {
-        url: "/logo.png", // depois bota uma imagem tua na pasta public
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "OXI - Plataforma de Mobilidade",
+        alt: "OXI Mobilidade – aplicativo de transporte urbano",
       },
     ],
     locale: "pt_BR",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "OXI Mobilidade",
+    title: "OXI – App de transporte com taxas menores",
     description:
-      "A plataforma que conecta motoristas e passageiros com segurança.",
+      "Corridas mais baratas para passageiros e taxas menores para motoristas. Conheça a OXI.",
     images: ["/logo.png"],
   },
+
   icons: {
     icon: "/favicon.ico",
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR">
       <body
