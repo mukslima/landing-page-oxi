@@ -309,7 +309,7 @@ export default function Page() {
         </a>
 
         <a
-          href="https://www.apple.com/app-store/"
+          href="https://apps.apple.com/br/app/oxi-passageiro/id6757094237"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-105 transition-transform"
@@ -344,7 +344,7 @@ export default function Page() {
         </a>
 
         <a
-          href="https://www.apple.com/app-store/"
+          href="https://apps.apple.com/br/app/oxi-motorista/id6757093927"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-105 transition-transform"
@@ -363,10 +363,7 @@ export default function Page() {
         <Footer openModal={setModal} />
       </main>
 
-      
-
       {/* -------- MODAIS -------- */}
-
       <Modal
         open={modal === "termos"}
         onClose={() => setModal(null)}
